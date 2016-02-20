@@ -1,19 +1,19 @@
 'use strict'
 
 let events = {
-	admin: {}
+	administrator: {}
 };
 
 let tasks = [];
 
 
 module.exports = {
-	module: require('./admin.js'),
+	module: require('./administrator.js'),
 	permissions: [],
 	exposed: true,
 	tasks: tasks,
 	events: {
-		group: 'admin',
-		shorthands: events.admin
+		group: 'administrator',
+		shorthands: events.administrator
 	}
 };

@@ -1,1 +1,1 @@
-module.exports = require("./build/Admin");
+module.exports = require("./build/Administrator");

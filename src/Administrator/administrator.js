@@ -1,9 +1,10 @@
 'use strict'
 
 let emitter = require("global-queue");
-let AdminApi = require('resource-management-framework').AdminApi;
+let AdministratorApi = require('resource-management-framework')
+	.AdministratorApi;
 
-class Admin {
+class Administrator {
 	constructor() {
 		this.emitter = emitter;
 	}
@@ -43,4 +44,4 @@ class Admin {
 
 }
 
-module.exports = Admin;
+module.exports = Administrator;

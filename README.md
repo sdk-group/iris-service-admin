@@ -1,2 +1,2 @@
-# iris-service-admin
-IRIS admin service
+# iris-service-administrator
+IRIS administrator service
