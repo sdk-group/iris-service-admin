@@ -10,7 +10,7 @@ class Administrator {
 	}
 
 	init() {
-		this.iris = new ServiceApi();
+		this.iris = new AdministratorApi();
 		this.iris.initContent();
 	}
 
@@ -18,8 +18,9 @@ class Administrator {
 	actionBootstrap({
 		workstation,
 		user_id,
-		user_type = "SystemEntity"
+		user_type
 	}) {
+		console.log("ADMIN BTST", workstation, user_id, user_type);
 		return Promise.resolve({
 			success: true
 		});
