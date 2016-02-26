@@ -35,8 +35,14 @@ class Administrator {
 		});
 	}
 
-	actionList({}) {
-		return Promise.resolve(true);
+	actionList({
+		type
+	}) {
+		return this.iris.getEntry({
+			query: {
+				type
+			}
+		});
 	}
 
 	actionSave({}) {
