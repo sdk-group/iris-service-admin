@@ -39,10 +39,15 @@ class Administrator {
 		type
 	}) {
 		return this.iris.getEntry({
-			query: {
-				type
-			}
-		});
+				query: {
+					type
+				}
+			})
+			.then((res) => _.values(res))
+			.catch((err) => {
+				console.log("ADM LIST", err.stack);
+				return [];
+			});
 	}
 
 	actionSave({}) {
