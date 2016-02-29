@@ -51,7 +51,9 @@ class Administrator {
 	}
 
 	actionSave({}) {
-		return Promise.resolve(true);
+		return Promise.resolve({
+			success: true
+		});
 	}
 
 }
