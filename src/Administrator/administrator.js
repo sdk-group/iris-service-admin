@@ -1,12 +1,12 @@
 'use strict'
 
-let emitter = require("global-queue");
+
 let AdministratorApi = require('resource-management-framework')
 	.AdministratorApi;
 
 class Administrator {
 	constructor() {
-		this.emitter = emitter;
+		this.emitter = message_bus;
 	}
 
 	init() {
