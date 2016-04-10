@@ -43,11 +43,7 @@ class Administrator {
 					type
 				}
 			})
-			.then((res) => _.values(res))
-			.catch((err) => {
-				console.log("ADM LIST", err.stack);
-				return [];
-			});
+			.then((res) => _.values(res));
 	}
 
 	actionSave({}) {
