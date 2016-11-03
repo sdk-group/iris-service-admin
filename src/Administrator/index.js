@@ -9,6 +9,7 @@ let tasks = [];
 
 module.exports = {
 	module: require('./administrator.js'),
+	name: 'administrator',
 	permissions: [],
 	exposed: true,
 	tasks: tasks,
